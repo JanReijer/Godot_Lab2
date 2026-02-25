@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dg64gwp0lggfb"]
+
+[ext_resource type="Texture2D" uid="uid://b0ijg8v4xw2si" path="res://Assets/asteriod-removebg-preview.png" id="1_1ydjd"]
+
+[node name="Asteriod" type="Node2D" unique_id=804320005]
+
+[node name="Asteriod" type="Sprite2D" parent="." unique_id=1545949665]
+position = Vector2(461, 287)
+texture = ExtResource("1_1ydjd")

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dgo8t463p7w6y"]
+
+[ext_resource type="Texture2D" uid="uid://bv5432mdpqaye" path="res://Assets/space.jpg" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://c8s0u3eugdp24" path="res://Assets/spaceshop-removebg-preview.png" id="2_8gbba"]
+[ext_resource type="PackedScene" uid="uid://dg64gwp0lggfb" path="res://Scenes/asteriod.tscn" id="3_jjvhh"]
+[ext_resource type="Script" uid="uid://57ktdqq1gbca" path="res://Scenes/spaceship.gd" id="3_kry3j"]
+
+[node name="Main" type="Node2D" unique_id=1552976716]
+position = Vector2(-1, 11)
+
+[node name="Space Background" type="Sprite2D" parent="." unique_id=63956139]
+position = Vector2(-284.75003, -172.5)
+scale = Vector2(1.498698, 1.5046296)
+texture = ExtResource("1_jjgbg")
+offset = Vector2(576, 324)
+
+[node name="Spaceship" type="Sprite2D" parent="." unique_id=2075743278]
+position = Vector2(306.99997, 453.99997)
+rotation = 1.3962634
+texture = ExtResource("2_8gbba")
+script = ExtResource("3_kry3j")
+
+[node name="Asteriod" parent="." unique_id=804320005 instance=ExtResource("3_jjvhh")]
+position = Vector2(1000.0001, 189)
+rotation = 3.0246553
+scale = Vector2(0.20225744, 0.19919005)
+
+[node name="Asteriod2" parent="." unique_id=469029815 instance=ExtResource("3_jjvhh")]
+position = Vector2(738.99994, 566)
+rotation = 3.6058502
+scale = Vector2(0.20225744, 0.19919005)
+
+[node name="Asteriod3" parent="." unique_id=779957511 instance=ExtResource("3_jjvhh")]
+position = Vector2(253, 310)
+rotation = -2.9060543
+scale = Vector2(0.16346842, 0.15680909)
+skew = -0.01043272
+
+[node name="Asteriod4" parent="." unique_id=180555839 instance=ExtResource("3_jjvhh")]
+position = Vector2(821.00006, 274)
+rotation = 0.34907797
+scale = Vector2(0.04089969, 0.039685056)
+skew = -0.0035418272
